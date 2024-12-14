@@ -107,7 +107,7 @@ gcc -g -o zpt.exe zpt.c -lzip -I/mingw64/include -L/mingw64/lib
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
 
 ## Acknowledgments
 
