@@ -7,7 +7,6 @@
 #include <zip.h>
 #include <windows.h>
 
-#define MAX_PATH 1024
 #define MAX_LINE 2048
 
 // Windows-compatible basename function
