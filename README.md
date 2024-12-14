@@ -33,13 +33,13 @@ pacman -S mingw-w64-x86_64-libzip
 
 3. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/pdf-zip-processor.git
-cd pdf-zip-processor
+git clone https://github.com/badcircle/zpt.git
+cd zpt
 ```
 
 4. Compile the program:
 ```bash
-gcc -o pdf_processor.exe program.c -lzip -I/mingw64/include -L/mingw64/lib
+gcc -o zpt.exe zpt.c -lzip -I/mingw64/include -L/mingw64/lib
 ```
 
 5. Make sure libzip DLL is in your PATH or copy it to the program directory:
@@ -50,12 +50,12 @@ cp /mingw64/bin/libzip*.dll .
 ## Usage
 
 ```bash
-pdf_processor.exe <path_to_zip_file>
+zpt.exe <path_to_zip_file>
 ```
 
 Example:
 ```bash
-pdf_processor.exe documents.zip
+zpt.exe documents.zip
 ```
 
 This will:
@@ -84,7 +84,7 @@ Error messages are printed to stderr with specific details about the failure.
 ### Project Structure
 
 ```
-pdf-zip-processor/
+zpt/
 ├── program.c          # Main source code
 ├── README.md         # This file
 └── .gitignore       # Git ignore file
@@ -94,7 +94,7 @@ pdf-zip-processor/
 
 For development, you might want to add debugging symbols:
 ```bash
-gcc -g -o pdf_processor.exe program.c -lzip -I/mingw64/include -L/mingw64/lib
+gcc -g -o zpt.exe zpt.c -lzip -I/mingw64/include -L/mingw64/lib
 ```
 
 ## Contributing
